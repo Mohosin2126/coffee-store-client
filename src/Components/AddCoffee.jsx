@@ -1,11 +1,33 @@
 
 const AddCoffee = () => {
-  
+  const handleAddCoffee=e=>{
+
+    e.preventDefault()
+    const form = event.target;
+
+        const name = form.name.value;
+        const quantity = form.quantity.value;
+        const supplier = form.supplier.value;
+        const taste = form.taste.value;
+        const category = form.category.value;
+        const details = form.details.value;
+        const photo = form.photo.value;
+
+        const newCoffee = { name, quantity, supplier, taste, category, details, photo }
+
+        console.log(newCoffee);
+
+  }
+
+
+
+
+
 
     return (
         <div className="bg-[#464542] p-24">
             <h2 className="text-3xl font-extrabold text-center mb-10">Add a Coffee</h2>
-            <form >
+            <form onSubmit={handleAddCoffee} >
                 {/* form name and quantity row */}
                 <div className="md:flex mb-8">
                     <div className="form-control md:w-1/2">
