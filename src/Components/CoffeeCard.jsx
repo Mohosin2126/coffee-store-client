@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const CoffeeCard = ({coffee}) => {
+const CoffeeCard = ({coffee,setCoffees,coffees}) => {
     const { _id, name, quantity, supplier, taste, photo } = coffee;
 
     const handleDelete = _id => {
