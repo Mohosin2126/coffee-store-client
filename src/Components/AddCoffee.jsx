@@ -26,7 +26,11 @@ const AddCoffee = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            swal("Good job!", "You clicked the button!", "success");
+            console.log(data)
+            if(data.insertedId){
+                swal("Good job!", "You clicked the button!", "success");
+            }
+           
         })
 
   }
@@ -47,7 +51,7 @@ const AddCoffee = () => {
                             <span className="label-text">Coffee Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="name" placeholder="Coffee Name" className="input input-bordered w-full" />
+                            <input  type="text" name="name" placeholder="Coffee Name" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
@@ -74,7 +78,7 @@ const AddCoffee = () => {
                             <span className="label-text">Taste</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="taste" placeholder="Taste" className="input input-bordered w-full" />
+                            <input  type="text" name="taste" placeholder="Taste" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -85,7 +89,7 @@ const AddCoffee = () => {
                             <span className="label-text">Category</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="category" placeholder="Category" className="input input-bordered w-full" />
+                            <input  type="text" name="category" placeholder="Category" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
@@ -93,7 +97,7 @@ const AddCoffee = () => {
                             <span className="label-text">Details</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="details" placeholder="Details" className="input input-bordered w-full" />
+                            <input  type="text" name="details" placeholder="Details" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -104,7 +108,7 @@ const AddCoffee = () => {
                             <span className="label-text">Photo URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" />
+                            <input  type="text" name="photo" placeholder="Photo URL" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
