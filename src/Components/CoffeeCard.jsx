@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-const CoffeeCard = () => {
+const CoffeeCard = ({coffee}) => {
     return (
         <div className="card card-side bg-base-100 shadow-xl">
             <figure><img src=""alt="Movie" /></figure>
