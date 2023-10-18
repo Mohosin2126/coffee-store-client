@@ -3,8 +3,8 @@ const AddCoffee = () => {
   
 
     return (
-        <div className="bg-[#F4F3F0] p-24">
-            <h2 className="text-3xl font-extrabold">Add a Coffee</h2>
+        <div className="bg-[#464542] p-24">
+            <h2 className="text-3xl font-extrabold text-center mb-10">Add a Coffee</h2>
             <form >
                 {/* form name and quantity row */}
                 <div className="md:flex mb-8">
